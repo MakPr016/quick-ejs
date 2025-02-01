@@ -8,3 +8,31 @@ You can install `quick-ejs` globally using npm to use it as a command-line tool:
 
 ```sh
 npm install -g quick-ejs
+```
+
+## Usage
+
+Once installed, you can easily create a new project by running the following command:
+
+```sh
+create-ejs <project-name>
+```
+
+## Project Structure
+The generated project includes:
+```
+<project-name>/
+├── app/
+│   └── index.ejs
+├── public/
+│   ├── css/
+│   │   └── style.css
+│   ├── js/
+│   │   └── app.js
+│   └── assets/
+│       ├── data.json
+│       ├── images/
+│       └── fonts/
+├── index.js
+└── package.json
+```
