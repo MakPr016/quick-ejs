@@ -1,0 +1,26 @@
+{
+  "name": "quick-ejs",
+  "version": "1.0.1",
+  "description": "A CLI tool to generate an Express.js + EJS project structure",
+  "main": "index.js",
+  "bin": {
+    "create-ejs": "index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "express",
+    "ejs",
+    "boilerplate",
+    "cli",
+    "starter-template"
+  ],
+  "author": "Mayank K.S",
+  "license": "MIT",
+  "dependencies": {},
+  "peerDependencies": {
+    "express": "^4.21.2",
+    "ejs": "^3.1.10"
+  }
+}
