@@ -39,7 +39,7 @@ app.get('/', (req, res) => res.render('index'));
 
 app.listen(port, () => {
   console.log('Server running at : http://localhost:3000/');
-  console.log("Ctrl+C to exit);
+  console.log("Ctrl+C to exit");
 });`
 };
 
