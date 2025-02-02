@@ -20,7 +20,6 @@ const structure = {
       "app.js": ""
     },
     "assets": {
-      "data.json": "",
       "images": {},
       "fonts": {}
     }

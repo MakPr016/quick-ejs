@@ -1,6 +1,6 @@
 {
   "name": "quick-ejs",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A CLI tool to generate an Express.js + EJS project structure",
   "main": "index.js",
   "bin": {
