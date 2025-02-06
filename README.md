@@ -30,7 +30,6 @@ The generated project includes:
 │   ├── js/
 │   │   └── app.js
 │   └── assets/
-│       ├── data.json
 │       ├── images/
 │       └── fonts/
 ├── index.js
