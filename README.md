@@ -33,6 +33,7 @@ quick-ejs my-project
 
 ## Generated Project Structure
 
+```sh
 my-project/
 ├── public/
 │ ├── css/style.css # Modern responsive styles
@@ -57,6 +58,7 @@ my-project/
 ├── .gitignore
 ├── package.json # ES6 module configuration
 └── server.js # Application entry point
+```
 
 ## CLI Options
 
