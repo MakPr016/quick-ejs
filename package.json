@@ -1,10 +1,11 @@
 {
   "name": "quick-ejs",
-  "version": "1.0.2",
-  "description": "A CLI tool to generate an Express.js + EJS project structure",
+  "version": "2.0.0",
+  "description": "Interactive CLI tool to scaffold Express.js projects with EJS or HTML templates",
+  "type": "module",
   "main": "index.js",
   "bin": {
-    "create-ejs": "index.js"
+    "quick-ejs": "./index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -14,13 +15,25 @@
     "ejs",
     "boilerplate",
     "cli",
-    "starter-template"
+    "starter-template",
+    "mongodb",
+    "authentication",
+    "mvc",
+    "express-generator",
+    "quick-ejs"
   ],
   "author": "Mayank K.S",
   "license": "MIT",
-  "dependencies": {},
-  "peerDependencies": {
-    "express": "^4.21.2",
-    "ejs": "^3.1.10"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MakPr016/quick-ejs.git"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "inquirer": "^9.2.12",
+    "ora": "^7.0.1"
   }
 }
