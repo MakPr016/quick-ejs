@@ -56,7 +56,7 @@ my-project/
 ├── .env.example # Environment template
 ├── .gitignore
 ├── package.json # ES6 module configuration
-└── index.js # Application entry point
+└── server.js # Application entry point
 
 ## CLI Options
 
