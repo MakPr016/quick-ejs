@@ -70,28 +70,123 @@ The interactive CLI will ask you to choose:
 6. **Authentication** - JWT-based auth system
 7. **Package Manager** - npm, yarn, or pnpm
 
+## Example Usage
+
+### Basic EJS Project
+
+```sh
+npx quick-ejs my-blog
+```
+
+Follow the prompts:
+
+- Template: EJS
+- Routes: Yes
+- Controllers: Yes
+- MongoDB: No
+- Package Manager: npm
+
+### Full-Stack with Authentication
+
+```sh
+npx quick-ejs my-auth-app
+```
+
+Follow the prompts:
+
+- Template: EJS
+- Routes: Yes
+- Controllers: Yes
+- MongoDB: Yes
+- Authentication: Yes
+- Package Manager: npm
+
+### Static HTML Project
+
+```sh
+npx quick-ejs my-website
+```
+
+Follow the prompts:
+
+- Template: HTML
+- Routes: No
+- Controllers: No
+- MongoDB: No
+- Package Manager: npm
+
 ## What's New in v2.0
 
-- ES6 module support throughout
-- Interactive CLI similar to create-next-app
-- Modern styling with Lucide icons
-- MongoDB and authentication options
-- MVC architecture support
-- Multiple package manager support
-- Clean terminal output with Lucide icons
-- Comprehensive error handling
+- **ES6 module support** - Modern JavaScript syntax throughout
+- **Interactive CLI** - User-friendly prompts similar to create-next-app
+- **Modern styling** - Beautiful default CSS with Lucide icons
+- **MongoDB integration** - Optional database setup with Mongoose
+- **JWT authentication** - Secure auth system with bcrypt and JWT
+- **MVC architecture** - Optional routes and controllers pattern
+- **Multiple package managers** - Support for npm, yarn, and pnpm
+- **Clean output** - Professional terminal interface with ora spinners
+- **Comprehensive error handling** - Built-in 404 and error pages
+
+## Project Features
+
+### Beautiful Default Styling
+
+Every generated project comes with:
+
+- Modern gradient backgrounds
+- Responsive grid layouts
+- Smooth animations and transitions
+- Lucide icon integration
+- Mobile-first design
+- CSS custom properties for easy theming
+
+### Environment Configuration
+
+Projects include `.env.example` with:
+
+- PORT configuration
+- NODE_ENV settings
+- MongoDB URI (if selected)
+- JWT secrets (if auth selected)
+
+### Ready-to-Use Scripts
+
+Generated `package.json` includes:
+
+- `npm start` - Production server
+- `npm run dev` - Development with nodemon
 
 ## Requirements
 
-- Node.js 18.0.0 or later
-- npm, yarn, or pnpm
+- **Node.js**: 18.0.0 or later
+- **npm**: 6.0.0 or later (or equivalent yarn/pnpm)
 
-## Contributing
+### v1.0.2 (Previous)
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+- Basic Express + EJS setup
+- Simple file structure generation
+- Font file copying
+
+## Links
+
+- **GitHub**: [https://github.com/MakPr016/quick-ejs](https://github.com/MakPr016/quick-ejs)
+- **npm**: [https://www.npmjs.com/package/quick-ejs](https://www.npmjs.com/package/quick-ejs)
+- **Issues**: [https://github.com/MakPr016/quick-ejs/issues](https://github.com/MakPr016/quick-ejs/issues)
 
 ## License
 
 MIT © Mayank K.S
 
+## Acknowledgments
+
+- Inspired by create-next-app and create-react-app
+- Icons by [Lucide](https://lucide.dev/)
+- Built with [Inquirer.js](https://github.com/SBoudrias/Inquirer.js)
+- Styled with [Chalk](https://github.com/chalk/chalk)
+- Loading spinners by [Ora](https://github.com/sindresorhus/ora)
+
 ---
+
+**Made with ❤️ by Mayank K.S**
+
+*Happy coding!*
