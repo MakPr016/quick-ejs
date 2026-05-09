@@ -1,6 +1,6 @@
 {
   "name": "quick-ejs",
-  "version": "3.0.8",
+  "version": "3.0.9",
   "description": "Interactive CLI tool to scaffold Express.js projects with EJS or HTML templates",
   "type": "module",
   "main": "index.js",
