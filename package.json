@@ -1,12 +1,18 @@
 {
   "name": "quick-ejs",
-  "version": "3.0.3",
+  "version": "3.0.5",
   "description": "Interactive CLI tool to scaffold Express.js projects with EJS or HTML templates",
   "type": "module",
   "main": "index.js",
   "bin": {
     "quick-ejs": "./index.js"
   },
+  "files": [
+    "index.js",
+    "lib/",
+    "README.md",
+    ".env.example"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
