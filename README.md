@@ -1,6 +1,6 @@
 # quick-ejs
 
-`quick-ejs` is an interactive CLI tool for quickly setting up modern Express.js projects with your choice of EJS or HTML templates. It provides a comprehensive boilerplate with optional MySQL (XAMPP) or MongoDB integration, JWT authentication, and MVC architecture.
+`quick-ejs` is an interactive CLI tool for quickly setting up modern Express.js projects with your choice of EJS templates, static HTML, or a backend-only no-view-engine mode. It provides a comprehensive boilerplate with optional MySQL (XAMPP) or MongoDB integration, JWT authentication, and MVC architecture.
 
 ## Quick Start
 
@@ -20,7 +20,7 @@ quick-ejs my-project
 ## Features
 
 - Interactive CLI with modern prompts
-- Choice between EJS templating or static HTML
+- Choice between EJS templating, static HTML, or backend-only (no view engine)
 - Optional MVC architecture with routes and controllers
 - MySQL (XAMPP) integration with ready-to-use user model and DB config
 - MongoDB integration with user models
@@ -66,7 +66,7 @@ my-project/
 The interactive CLI will ask you to choose:
 
 1. **Project name** - Your application name
-2. **Template type** - EJS (dynamic) or HTML (static)
+2. **Template type** - None (backend only), EJS (dynamic), or HTML (static)
 3. **Routes** - Separate route files for organization
 4. **Controllers** - MVC pattern with controller layer
 5. **Database** - None, MySQL (XAMPP), or MongoDB
@@ -131,6 +131,20 @@ Follow the prompts:
 - Routes: No
 - Controllers: No
 - MongoDB: No
+- Package Manager: npm
+
+### Backend-Only API Project
+
+```sh
+npx quick-ejs my-api
+```
+
+Follow the prompts:
+
+- Template: None (Backend only API)
+- Routes: Yes
+- Controllers: Yes
+- Database: None/MySQL/MongoDB
 - Package Manager: npm
 
 ## What's New in v3.x
