@@ -1,6 +1,6 @@
 # quick-ejs
 
-`quick-ejs` is an interactive CLI tool for quickly setting up modern Express.js projects with your choice of EJS or HTML templates. It provides a comprehensive boilerplate with optional MongoDB integration, JWT authentication, and MVC architecture.
+`quick-ejs` is an interactive CLI tool for quickly setting up modern Express.js projects with your choice of EJS or HTML templates. It provides a comprehensive boilerplate with optional MySQL (XAMPP) or MongoDB integration, JWT authentication, and MVC architecture.
 
 ## Quick Start
 
@@ -22,6 +22,7 @@ quick-ejs my-project
 - Interactive CLI with modern prompts
 - Choice between EJS templating or static HTML
 - Optional MVC architecture with routes and controllers
+- MySQL (XAMPP) integration with ready-to-use user model and DB config
 - MongoDB integration with user models
 - JWT-based authentication system
 - Beautiful default styling with Lucide icons
@@ -48,9 +49,9 @@ my-project/
 ├── controllers/ (if enabled)
 │ ├── homeController.js # Request handlers
 │ └── authController.js # Auth logic
-├── models/ (if MongoDB)
+├── models/ (if MySQL or MongoDB)
 │ └── User.js # User model
-├── config/ (if MongoDB)
+├── config/ (if MySQL or MongoDB)
 │ └── db.js # Database connection
 ├── middleware/ (if auth)
 │ └── auth.js # JWT middleware
@@ -68,7 +69,7 @@ The interactive CLI will ask you to choose:
 2. **Template type** - EJS (dynamic) or HTML (static)
 3. **Routes** - Separate route files for organization
 4. **Controllers** - MVC pattern with controller layer
-5. **MongoDB** - Database integration with Mongoose
+5. **Database** - None, MySQL (XAMPP), or MongoDB
 6. **Authentication** - JWT-based auth system
 7. **Package Manager** - npm, yarn, or pnpm
 
@@ -99,7 +100,22 @@ Follow the prompts:
 - Template: EJS
 - Routes: Yes
 - Controllers: Yes
-- MongoDB: Yes
+- Database: MongoDB
+- Authentication: Yes
+- Package Manager: npm
+
+### MySQL (XAMPP) + Authentication
+
+```sh
+npx quick-ejs my-mysql-app
+```
+
+Follow the prompts:
+
+- Template: EJS
+- Routes: Yes
+- Controllers: Yes
+- Database: MySQL (XAMPP)
 - Authentication: Yes
 - Package Manager: npm
 
@@ -117,12 +133,13 @@ Follow the prompts:
 - MongoDB: No
 - Package Manager: npm
 
-## What's New in v2.0
+## What's New in v3.x
 
 - **ES6 module support** - Modern JavaScript syntax throughout
 - **Interactive CLI** - User-friendly prompts similar to create-next-app
 - **Modern styling** - Beautiful default CSS with Lucide icons
 - **MongoDB integration** - Optional database setup with Mongoose
+- **MySQL (XAMPP) integration** - Optional MySQL setup with mysql2 and generated user model
 - **JWT authentication** - Secure auth system with bcrypt and JWT
 - **MVC architecture** - Optional routes and controllers pattern
 - **Multiple package managers** - Support for npm, yarn, and pnpm
@@ -148,6 +165,7 @@ Projects include `.env.example` with:
 
 - PORT configuration
 - NODE_ENV settings
+- MySQL variables: `DB_HOST`, `DB_USER`, `DB_PASSWORD`, `DB_NAME` (if selected)
 - MongoDB URI (if selected)
 - JWT secrets (if auth selected)
 
@@ -189,6 +207,6 @@ MIT © Mayank K.S
 
 ---
 
-**Made with ❤️ by Mayank K.S**
+## Made with ❤️ by Mayank K.S
 
 *Happy coding!*

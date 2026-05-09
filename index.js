@@ -28,6 +28,20 @@ function createStructure(basePath, structure) {
   }
 }
 
+function toInstallArgs(deps) {
+  if (Array.isArray(deps)) {
+    return deps;
+  }
+
+  if (deps && typeof deps === 'object') {
+    return Object.entries(deps).map(([name, version]) =>
+      version ? `${name}@${version}` : name
+    );
+  }
+
+  return [];
+}
+
 async function initProject() {
   try {
     const config = await promptUser(projectName);
@@ -48,8 +62,8 @@ async function initProject() {
 
     spinner.succeed('Project structure created');
 
-    const deps = getDependencies(config);
-    const devDeps = getDevDependencies();
+    const deps = toInstallArgs(getDependencies(config));
+    const devDeps = toInstallArgs(getDevDependencies());
 
     spinner.start(`Installing dependencies with ${config.packageManager}...`);
 
